@@ -2,44 +2,91 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8"/>
-        <meta name="description" content="ykun03's home page.'">
+        <meta name="description" content="ykun03's home page.'"/>
         <title>ykun03's page</title>
-        <link rel="shortcut icon" href="images/icon.png">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/icon.png"/>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/kickstart.js"></script> <!-- KICKSTART -->
+        <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+
     </head>
     <body>
         <header>
             <h1>
-                <img src="images/icon.png" class="my-icon">
+                <img src="images/icon.png" class="my-icon"/>
                 ykun03
             </h1>
         </header>
-        <article>
-            <h2>links</h2>
+        <!-- Tabs Left -->
+        <ul class="tabs left">
+            <li><a href="#tabr1">Bio</a></li>
+            <li><a href="#tabr2">Links</a></li>
+        </ul>
+
+        <div id="tabr1" class="tab-content">
+            <ul class="fa-ul">
+                <li>
+                    <i class="fa fa-user-circle fa-li"></i>
+                    <b>Name : </b>IGUCHI Yusuke
+                </li>
+                <li>
+                    <i class="fa fa-university fa-li"></i>
+                    <b>Affiliation : </b>TUAT, Dept. Computer Science, B1
+                </li>
+                <li>
+                    <i class="fa fa-envelope fa-li"></i>
+                    <b>Email : </b>transam3y(at)gmail.com
+                </li>
+                <li>
+                    <i class="fa fa-code fa-li"></i>
+                    <b>Main Skill : </b>Unity(C#), Python 3
+                </li>
+                <li>
+                    <i class="fa fa-child fa-li"></i>
+                    <b>Sub Skill : </b>C, C++, JavaScript(ES6)
+                </li>
+                <li>
+                    <i class="fa fa-heart fa-li"></i>
+                    <b>Likes : </b>Virtual Reality, TECHTILE, Haptic Interface, <br/>
+                    Game Programming, Level Design, <br/>
+                    Game Engine, 3DCG
+                </li>
+            </ul>
+        </div>
+        <div id="tabr2" class="tab-content">
             <ul class="fa-ul">
                 <li>
                     <i class="fa fa-github fa-li"></i>
-                    <a href="https://github.com/zyouyowa" target="_blank">GitHub</a>
+                    <a href="https://github.com/zyouyowa" target="_blank" class="li-items">GitHub</a>
                 </li>
                 <li>
                     <i class="fa fa-pencil fa-li"></i>
-                    <a href="http://ykun33.hatenablog.com/" target="_blank">はてなブログ</a>
+                    <a href="http://ykun33.hatenablog.com/" target="_blank" class="li-items">はてなブログ</a>
                 </li>
                 <li>
                     <i class="fa fa-twitter fa-li"></i>
-                    <a href="https://twitter.com/ykun03" target="_blank">Twitter</a>
+                    <a href="https://twitter.com/ykun03" target="_blank" class="li-items">Twitter</a>
                 </li>
                 <li>
                     <i class="fa fa-facebook fa-li"></i>
-                    <a href="https://www.facebook.com/ykun03" target="_blank">Facebook</a>
+                    <a href="https://www.facebook.com/ykun03" target="_blank" class="li-items">Facebook</a>
                 </li>
                 <li>
                     <i class="fa fa-amazon fa-li"></i>
-                    <a href="http://www.amazon.co.jp/registry/wishlist/2UNW6YSSZ92FE/ref=cm_sw_r_tw_ws_x_uydtybNGETWQV" target="_blank">Wish List</a>
+                    <a href="http://www.amazon.co.jp/registry/wishlist/2UNW6YSSZ92FE/ref=cm_sw_r_tw_ws_x_uydtybNGETWQV" target="_blank" class="li-items">Wish List</a>
                 </li>
-                
+                <li>
+                    <i class="fa fa-group fa-li"></i>
+                    <a href="http://power-halation.github.io" target="_blank" class="li-items">Power Halation</a>,
+                    <a href="http://web.tuat.ac.jp/~tuatmcc/" target="_blank" class="li-items">TUAT Micro Computer Club</a>
+                </li>
             </ul>
-        </article>
+        </div>
+        <footer>
+            © 2016 IGUCHI Yusuke
+        </footer>
     </body>
 </html>
