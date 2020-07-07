@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="ykun03's home page.'"/>
+        <title>ykun03's page</title>
+        <link rel="shortcut icon" href="images/icon.png"/>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/kickstart.js"></script> <!-- KICKSTART -->
+        <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+    </head>
+    <body>
+        <header>
+        </header>
+        <h3>全角→半角変換</h3>
+        <textarea name="toHalfArea" cols="30" rows="3">
+            変換したい文章を入力してください。
+        </textarea>
+        <input type="button" value="変換実行" onclick="toHalf()"/>
+        <script language="javascript" type="text/javascript">
+        function toHalf(){
+            const str_in = document.toHalfArea.value;
+            var half = str_in.replace(/[！-～]/g,
+                function(tmp) {
+                    return String.fromCharCode(tmp.charCodeAt(0) - 0xFEE0)
+                }
+            ).replace(/”/g, "\"")
+            .replace(/’/g, "'")
+            .replace(/‘/g, "`")
+            .replace(/￥/g, "\\")
+            .replace(/　/g, " ")
+            .replace(/〜/g, "~");
+            document.toHalfArea.value = half;
+        }
+        </script>
+        <footer>
+            © 2020 IGUCHI Yusuke
+        </footer>
+    </body>
+</html>
